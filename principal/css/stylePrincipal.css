@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa, sans-serif;
+    border: none;
+}
+
+/* MENU FLUTUANTE */
+.menu_float {
+    width: 70px;
+    height: 70px;
+    bottom: 30px;
+    right: 30px;
+    transition: .8s;
+    z-index: 3;
+}
+
+.telaPrincipal {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 5000px;
+    background: linear-gradient(45deg, rgba(10, 63, 132, 1), rgb(0, 0, 0));
+}
+
+.panfleto {
+    width: 400px;
+    height: 300px;
+    background: rgb(15, 80, 165);
+}
+
+/* OPÇÕES DE EDIÇÃO DO PANFLETO */
+.overlay_panfleto_id_1,
+.overlay_panfleto_id_2,
+.overlay_panfleto_id_3,
+.overlay_panfleto_id_4,
+.overlay_panfleto_id_5,
+.overlay_panfleto_id_6,
+.overlay_panfleto_id_7,
+.overlay_panfleto_id_8,
+.overlay_panfleto_id_9,
+.overlay_panfleto_id_10 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+    transition: .5s linear;
+}
+
+.editar_panfleto_id_1,
+.editar_panfleto_id_2,
+.editar_panfleto_id_3,
+.editar_panfleto_id_4,
+.editar_panfleto_id_5,
+.editar_panfleto_id_6,
+.editar_panfleto_id_7,
+.editar_panfleto_id_8,
+.editar_panfleto_id_9,
+.editar_panfleto_id_10 {
+    top: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.abrir_panfleto_id_1:hover,
+.abrir_panfleto_id_2:hover,
+.abrir_panfleto_id_3:hover,
+.abrir_panfleto_id_4:hover,
+.abrir_panfleto_id_5:hover,
+.abrir_panfleto_id_6:hover,
+.abrir_panfleto_id_7:hover,
+.abrir_panfleto_id_8:hover,
+.abrir_panfleto_id_9:hover,
+.abrir_panfleto_id_10:hover {
+    opacity: .8;
+}
+
+.menu_panfleto_id_1,
+.menu_panfleto_id_2,
+.menu_panfleto_id_3,
+.menu_panfleto_id_4,
+.menu_panfleto_id_5,
+.menu_panfleto_id_6,
+.menu_panfleto_id_7,
+.menu_panfleto_id_8,
+.menu_panfleto_id_9,
+.menu_panfleto_id_10 {
+    width: 100px;
+    height: 80px;
+    transition: .2s;
+    z-index: 2;
+    top: 80px;
+    right: -100px;
+}
+
+.menuMostrar_panfleto_1,
+.menuMostrar_panfleto_2,
+.menuMostrar_panfleto_3,
+.menuMostrar_panfleto_4,
+.menuMostrar_panfleto_5,
+.menuMostrar_panfleto_6,
+.menuMostrar_panfleto_7,
+.menuMostrar_panfleto_8,
+.menuMostrar_panfleto_9,
+.menuMostrar_panfleto_10 {
+    right: 0px !important;
+    transition: .2s;
+}
+
+/* PRIORIDADE DE PANFLETO */
+.prioridadeBaixa_color_1,
+.prioridadeBaixa_color_2,
+.prioridadeBaixa_color_3,
+.prioridadeBaixa_color_4,
+.prioridadeBaixa_color_5,
+.prioridadeBaixa_color_6,
+.prioridadeBaixa_color_7,
+.prioridadeBaixa_color_8,
+.prioridadeBaixa_color_9,
+.prioridadeBaixa_color_10 {
+    background: #008719;
+}
+
+.prioridadeMedia_color_1,
+.prioridadeMedia_color_2,
+.prioridadeMedia_color_3,
+.prioridadeMedia_color_4,
+.prioridadeMedia_color_5,
+.prioridadeMedia_color_6,
+.prioridadeMedia_color_7,
+.prioridadeMedia_color_8,
+.prioridadeMedia_color_9,
+.prioridadeMedia_color_10 {
+    background: #c4ae06;
+}
+
+.prioridadeAlta_color_1,
+.prioridadeAlta_color_2,
+.prioridadeAlta_color_3,
+.prioridadeAlta_color_4,
+.prioridadeAlta_color_5,
+.prioridadeAlta_color_6,
+.prioridadeAlta_color_7,
+.prioridadeAlta_color_8,
+.prioridadeAlta_color_9,
+.prioridadeAlta_color_10 {
+    background: #a60000;
+}
+
+.efeito_hover {
+	background: rgba(255, 255, 255, .4);
+}
+
+/* MENSAGEM DE BEM VINDO */
+.saldacoes {
+    width: 400px;
+    height: 50px;
+    z-index: 10;
+    background: linear-gradient(25deg, #FFC107, black);
+    right: -410px;
+    transition: .5s ease-in;
+}
+
+.saldacoes p {
+    margin-bottom: 0;
+}
+
+.showSaldacoes {
+    right: 0px !important;
+    transition: .5s ease-out;
+}
+
+/* CONFIGURAÇÕES DE ADMIN */
+.config {
+    z-index: 5;
+}
+
+.items_adm {
+    width: 160px;
+    font-size: .9em;
+    transform: translate(-44%, -0%);
+    top: 47px;
+    display: none !important;
+}
+
+.items_adm a:hover {
+	background: rgba(255, 255, 255, .4);
+}
+
+.showMenuAdmin {
+    display: flex !important;
+}

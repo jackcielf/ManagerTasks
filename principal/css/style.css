@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa, sans-serif;
+    border: none;
+}
+
+/* MENU FLUTUANTE */
+.menu_float {
+    width: 70px;
+    height: 70px;
+    bottom: 30px;
+    right: 30px;
+    transition: .8s;
+    z-index: 3;
+}
+
+.telaPrincipal {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(10, 63, 132, 1), rgb(0, 0, 0));
+}
+
+.panfleto {
+    width: 400px;
+    height: 300px;
+}
+
+/* OPÇÕES DE EDIÇÃO DO PANFLETO */
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+    transition: .5s linear;
+}
+
+.abrir {
+    top: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.abrir:hover {
+    opacity: .8;
+}
+
+.menu {
+    width: 100px;
+    height: 80px;
+    transition: .2s;
+    z-index: 2;
+    top: 80px;
+    right: -100px;
+}
+
+.menuMostrar {
+    right: 0px !important;
+    transition: .2s;
+}
+
+/* MENSAGEM DE BEM VINDO */
+.saldacoes {
+    width: 400px;
+    height: 50px;
+    z-index: 10;
+    background: linear-gradient(25deg, #FFC107, black);
+    right: -410px;
+    transition: .5s ease-in;
+}
+
+.saldacoes p {
+    margin-bottom: 0;
+}
+
+.showSaldacoes {
+    right: 0px !important;
+    transition: .5s ease-out;
+}

@@ -1,0 +1,44 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Comfortaa, sans-serif;
+            border: none;
+        }
+
+        .telaForm {
+            width: 100vw;
+            height: 100vh;
+    background: linear-gradient(45deg, rgba(10, 63, 132, 1), rgb(0, 0, 0));
+        }
+
+        .form {
+            width: 400px;
+            height: 550px;
+        }
+
+        .input {
+            width: 100%;
+            background: transparent;
+            border-bottom: .5px solid #fff;
+        }
+        
+        .input:focus {
+        	outline: 0;
+        }
+
+        .input_time {
+            width: 105px;
+            font-size: .9em;
+        }
+
+        .input-group .opcoes {
+            width: 300px;
+        }
+
+        .voltar {
+            width: 40px;
+            height: 40px;	
+            top: 0;
+            right: 0;
+        }
